@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #101026, #25203b, #111827);
+    color: #ffffff;
+}
+.invitation{
+    width: 100%;
+    max-width: 500px;
+    padding: 40px 30px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    background:rgba(255, 255, 255, 0.07);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+}
+.top-label{
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid #f5c16c;
+    border-radius: 30px;
+    color: #f5c16c;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.cake{
+    margin: 25px 0 12px;
+    font-size: 58px;
+}
+.intro{
+    margin-bottom: 10px;
+    color: #f5c16c;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+h1{
+    font-size: clamp(30px, 7vw, 42px);
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+h2{
+    color: #f5c16c;
+    font-size: clamp(24px, 6vw, 32px);
+    margin-bottom: 20px;
+}
+.message{
+    max-width: 360px;
+    margin: 0 auto 28px;
+    color: #d1d5db;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.event-details{
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(0,0,0,0.18);
+    text-align: left;
+}
+.detail{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 14px 0;
+}
+.detail + .detail{
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+}
+.icon{
+    font-size: 25px;
+}
+.detail h3{
+    margin-bottom: 6px;
+    color: #f5c16c;
+    font-size: 11px;
+    letter-spacing: 2px;
+
+}
+.detail p{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 2px;
+
+}
+.closing{
+    margin-top: 25px;
+    color: #f5c16c;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.6;
+}
+.rsvp{
+    margin-top: 16px;
+    color: #d1d5db;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+}
+.footer{
+    margin-top: 30px;
+    color: #9ca3af;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+@media(max-width: 400px){
+    .invitation{
+        padding: 30px 18px;
+    }
+    .event-details{
+        padding: 14px;
+
+    }
+    .detail{
+        gap: 10px;
+    }
+}
